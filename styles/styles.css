@@ -38,11 +38,7 @@ img {
 p { padding: 0;}
 
 main {
-    max-width: 640px;
-}
-
-main p {
-    max-width: 350px;
+    max-width: 560px;
 }
 
 main img {
@@ -83,6 +79,7 @@ footer {
 /* Class Selectors */
 
 .box {
+    clear: both;
     margin: var(--margin);
     padding: var(--padding);
     border: var(--border);
