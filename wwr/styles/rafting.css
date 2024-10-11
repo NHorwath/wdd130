@@ -9,7 +9,48 @@
 }
 
 * {
-    max-width: 1200px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* header */
+
+header {
+    margin: 1rem auto;
+    padding: 1rem;
+	display: grid;
+	grid-template-columns: 10px 1fr;
+	border-bottom: 1px solid #ccc;
+    background-color: var(--accent1-color);
+}
+
+header img {
+    margin: 0 0.25rem 0 1rem;
+    width: 128px;
+    height: auto;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+}
+header nav a {
+    display: block;
+	padding: 5px 20px;
+    margin: 0 5px;
+	text-decoration: none;
+    font-family: var(--heading-font);
+    background-color: var(--secondary-color);
+    border: solid 1px white;
+    color: white;
+    font-size: large;
+    font-weight: 100;
+}
+
+/* main */
+
+main {
+    background-color: var(--primary-color);
 }
 
 .hero {
@@ -56,13 +97,74 @@
 h2 {
     font-family: var(--heading-font);
     font-weight: 100;
+    color: white;
 }
 
 p {
     font-family: var(--paragraph-font);
     font-weight: 400;
+    color: white;
 }
 
-nav a {
-    text-decoration: none;
+.history-section {
+    margin: auto;
+    padding: 10px 1rem 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--accent1-color);
+}
+
+.history-section p {
+    max-width: 70%;
+}
+
+.grid {
+    margin: 1rem auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: var(--accent1-color);
+}
+
+.grid h2 {
+    grid-column: 1/6;
+    padding: 1rem;
+}
+
+.grid img {
+    width: 100%;
+    margin: 1rem auto 0;
+}
+
+.grid figcaption {
+    font-family: var(--paragraph-font);
+    color: white;
+    text-align: center;
+    background-color: var(--accent1-color);
+}
+
+/* footer */
+
+footer {
+    display: flex;
+    margin: 1rem auto;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+}
+
+footer p {
+    font-family: var(--paragraph-font);
+    text-align: center;
+}
+
+.sociallinks {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    
+}
+
+.sociallinks img {
+    object-fit: fill;
+    width: 50px;
 }
