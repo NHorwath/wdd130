@@ -6,6 +6,7 @@
     --heading-font: "Roboto Condensed", system-ui;
     --paragraph-font: "Inter", system-ui;
     --border: solid 3px rgba(0, 0, 0, 0.5);
+    --font-color: white;
 }
 
 * {
@@ -16,12 +17,12 @@
 /* header */
 
 header {
-    margin: 1rem auto;
+    margin: 1rem auto 0;
     padding: 1rem;
 	display: grid;
 	grid-template-columns: 10px 1fr;
-	border-bottom: 1px solid #ccc;
-    background-color: var(--accent1-color);
+	border-bottom: 3px solid #ccc;
+    background-color: var(--secondary-color);
 }
 
 header img {
@@ -40,9 +41,9 @@ header nav a {
     margin: 0 5px;
 	text-decoration: none;
     font-family: var(--heading-font);
-    background-color: var(--secondary-color);
+    background-color: var(--accent2-color);
     border: solid 1px white;
-    color: white;
+    color: var(--font-color);
     font-size: large;
     font-weight: 100;
 }
@@ -69,7 +70,7 @@ main {
     font-family: var(--heading-font);
     font-weight: 100;
     background-color: rgba(0, 0, 0, 0.5);
-    color: white;
+    color: var(--font-color);
     width: 100%;
     height: auto;
     padding: 10px;
@@ -84,8 +85,12 @@ main {
     width: 50%;
     padding: 10px;
     background-color: rgba(65, 90, 119, 0.7);
-    
-    
+}
+
+.hero article p {
+    font-family: var(--paragraph-font);
+    font-weight: 400;
+    color: var(--font-color);
 }
 
 .hero article img {
@@ -94,16 +99,16 @@ main {
 }
 
 
-h2 {
+section h2 {
     font-family: var(--heading-font);
     font-weight: 100;
-    color: white;
+    color: var(--font-color);
 }
 
-p {
+section p {
     font-family: var(--paragraph-font);
     font-weight: 400;
-    color: white;
+    color: var(--font-color);
 }
 
 .history-section {
@@ -119,14 +124,17 @@ p {
 }
 
 .grid {
-    margin: 1rem auto;
+    margin: 1rem auto 0;
     padding: 1rem;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     background-color: var(--accent1-color);
+	border-bottom: 3px solid #ccc;
 }
 
 .grid h2 {
+    font-family: var(--heading-font);
+    font-weight: 100;
     grid-column: 1/6;
     padding: 1rem;
 }
@@ -138,7 +146,8 @@ p {
 
 .grid figcaption {
     font-family: var(--paragraph-font);
-    color: white;
+    font-weight: 400;
+    color: var(--font-color);
     text-align: center;
     background-color: var(--accent1-color);
 }
@@ -146,14 +155,16 @@ p {
 /* footer */
 
 footer {
+    margin: auto;
     display: flex;
-    margin: 1rem auto;
     padding: 1rem;
     background-color: var(--secondary-color);
 }
 
 footer p {
     font-family: var(--paragraph-font);
+    font-weight: 400;
+    color: var(--font-color);
     text-align: center;
 }
 
