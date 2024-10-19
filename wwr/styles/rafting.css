@@ -179,3 +179,126 @@ footer p {
     object-fit: fill;
     width: 50px;
 }
+
+/* contact.html */
+
+.contact-section {
+    display: grid;
+    grid-template-columns: 380px 400px 1fr;
+    grid-gap: 5px;
+    text-align: right;
+}
+
+form {
+    display: grid;
+}
+
+label, input, button, textarea {
+    font-family: "Inter", "Roboto Condensed";
+    font-weight: 400;
+    margin: .2rem;
+}
+
+label {
+    text-align: right;
+    padding-right: 1rem;
+}
+
+fieldset {
+    background-color: var(--accent1-color);
+    padding: .5rem;
+    margin: 0.5rem;
+    border: none;
+    color: var(--font-color);
+}
+
+fieldset legend {
+    font-family: "Roboto Condensed";
+    padding: 0 .5rem;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+button {
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: lightskyblue;
+    border: none;
+    border-radius: .5rem;
+    font-size: 1.1rem;
+}
+
+button:hover {
+    background-color: rgb(179, 210, 241);
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.column1 {
+    grid-template-columns: 3fr 2fr;
+    margin: 0.5rem 0;
+}
+
+.column2 {
+    grid-template-columns: 1fr 3fr;
+    margin: 0.5rem 0;
+}
+
+input[type="checkbox"] {
+    vertical-align: bottom;
+}
+
+.info {
+    background-color: var(--accent1-color);
+    padding: 1rem;
+    margin: auto 1rem auto 0;
+    text-align: left;
+}
+
+.info p {
+    font-size: 0.9rem;
+}
+
+.info h2 {
+    padding-bottom: 1rem;
+}
+
+.exployees {
+    margin: 1rem auto 0;
+    padding: 1rem;
+    display: flex;
+    text-align: center;
+}
+
+.employees figure, figcaption {
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 1.2rem;
+    background-color: var(--accent1-color);
+    padding: .5rem 1rem;
+}
+
+.exployees img {
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: .5rem;
+}
+
+.wireframe {
+    text-decoration: none;
+    font-family: "Roboto Condensed";
+    font-weight: 100;
+    font-size: 1.2rem;
+    color: white;
+    padding: .2rem .5rem;
+
+}
+
+.wireframe:hover {
+    background-color: var(--accent1-color);
+}
